@@ -1,0 +1,21 @@
+{
+  "name": "devcontainers-practice",
+  "version": "1.0.0",
+  "description": "Dev Containers の練習プロジェクト",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon src/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://yamaday0u.backlog.com/git/APP/devcontainers-practice.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^5.1.0"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.10"
+  }
+}
