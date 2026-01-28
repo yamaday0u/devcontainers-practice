@@ -88,6 +88,14 @@ When reviewing PRs for this project, focus on:
 - Port 3000 is accessible from the host browser after startup
 - Volume mounts persist changes correctly (code edits sync, node_modules isolation holds)
 
+### Creating a Pull Request
+Once changes are complete and validated:
+1. Commit changes locally with clear, descriptive messages
+2. Push your branch to the remote repository
+3. Open a pull request with a clear title and description
+4. Ensure all validation checks pass before requesting review
+5. Request review from team members (reviews should be conducted in Japanese)
+
 ---
 
 **When making changes:**
