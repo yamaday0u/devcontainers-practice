@@ -1,0 +1,63 @@
+name: 機能要望
+description: 新機能や改善のリクエストを提案する
+title: "[Feature]: "
+labels: ["enhancement"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        機能要望ありがとうございます。以下のフォームに記入してください。
+
+  - type: textarea
+    id: summary
+    attributes:
+      label: 機能の概要
+      description: 提案する機能について簡潔に説明してください
+      placeholder: 例:TypeScriptのサポートを追加する
+    validations:
+      required: true
+
+  - type: textarea
+    id: background
+    attributes:
+      label: 背景・目的
+      description: この機能が必要な理由や解決したい問題を説明してください
+      placeholder: |
+        例:
+        - 型安全性を向上させたい
+        - 開発時のエラーを早期に検出したい
+        - 他のプロジェクトとの一貫性を保ちたい
+    validations:
+      required: true
+
+  - type: textarea
+    id: solution
+    attributes:
+      label: 提案する解決策
+      description: 具体的にどのように実装するかのアイデアを記載してください
+      placeholder: |
+        例:
+        1. TypeScriptの依存関係をpackage.jsonに追加
+        2. tsconfig.jsonを作成
+        3. src/index.jsをsrc/index.tsに変換
+        4. ビルドスクリプトを追加
+    validations:
+      required: true
+
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: 代替案
+      description: 他に検討した解決策があれば記載してください
+      placeholder: 例:JSDocを使用して型情報を追加する方法も検討
+    validations:
+      required: false
+
+  - type: textarea
+    id: additional
+    attributes:
+      label: 追加コンテキスト
+      description: その他、参考になる情報があれば記載してください
+      placeholder: 参考リンク、スクリーンショット、関連するIssueなど
+    validations:
+      required: false
