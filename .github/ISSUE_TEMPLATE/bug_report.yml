@@ -1,0 +1,102 @@
+name: 不具合報告
+description: 不具合やバグを報告する
+title: "[Bug]: "
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        不具合報告ありがとうございます。以下のフォームに記入してください。
+
+  - type: textarea
+    id: description
+    attributes:
+      label: 不具合の概要
+      description: 発生している不具合について簡潔に説明してください
+      placeholder: 例:Dev Containerでポート3000が転送されない
+    validations:
+      required: true
+
+  - type: textarea
+    id: steps
+    attributes:
+      label: 再現手順
+      description: 不具合を再現するための手順を記載してください
+      placeholder: |
+        1. VS Codeでプロジェクトを開く
+        2. Dev Containerで再オープン
+        3. `npm run dev` を実行
+        4. ...
+    validations:
+      required: true
+
+  - type: textarea
+    id: expected
+    attributes:
+      label: 期待される動作
+      description: 本来どのように動作すべきかを説明してください
+      placeholder: 例:ポート3000がホストに転送され、ブラウザでアクセス可能になる
+    validations:
+      required: true
+
+  - type: textarea
+    id: actual
+    attributes:
+      label: 実際の動作
+      description: 実際にどのような動作になっているかを説明してください
+      placeholder: 例:ポートが転送されず、ブラウザでアクセスできない
+    validations:
+      required: true
+
+  - type: input
+    id: os
+    attributes:
+      label: OS
+      description: 使用しているOSを記載してください
+      placeholder: 例:Windows 11, macOS 14.1, Ubuntu 22.04
+    validations:
+      required: true
+
+  - type: input
+    id: docker-version
+    attributes:
+      label: Dockerバージョン
+      description: Dockerのバージョンを記載してください (docker --version)
+      placeholder: 例:Docker version 24.0.7
+    validations:
+      required: true
+
+  - type: input
+    id: vscode-version
+    attributes:
+      label: VS Codeバージョン
+      description: VS Codeのバージョンを記載してください
+      placeholder: 例:1.85.0
+    validations:
+      required: true
+
+  - type: input
+    id: node-version
+    attributes:
+      label: Node.jsバージョン (コンテナ内)
+      description: コンテナ内のNode.jsバージョンを記載してください (node --version)
+      placeholder: 例:v22.20.0
+    validations:
+      required: false
+
+  - type: textarea
+    id: screenshots
+    attributes:
+      label: スクリーンショット/ログ
+      description: 該当する場合、スクリーンショットやエラーログを添付してください
+      placeholder: スクリーンショットをドラッグ&ドロップするか、ログを貼り付けてください
+    validations:
+      required: false
+
+  - type: textarea
+    id: additional
+    attributes:
+      label: 追加情報
+      description: その他、参考になる情報があれば記載してください
+    validations:
+      required: false
