@@ -1,0 +1,5 @@
+blank_issues_enabled: false
+contact_links:
+  - name: ディスカッション
+    url: https://github.com/yamaday0u/devcontainers-practice/discussions
+    about: 質問や一般的な議論はこちら
