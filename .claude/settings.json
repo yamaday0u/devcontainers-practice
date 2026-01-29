@@ -1,0 +1,15 @@
+{
+  "model": "opus",
+  "permissions": {
+    "allow": [
+      "Bash(git status)",
+      "Bash(git diff)"
+    ],
+    "ask": [
+      "Bash(git add:*)",
+      "Bash(git commit:*)",
+      "Bash(git push:*)",
+      "Bash(gh pr:*)"
+    ]
+  }
+}
