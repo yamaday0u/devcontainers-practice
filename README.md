@@ -21,7 +21,7 @@ Dev Containers + Claude Codeの練習プロジェクト
 ```
 .
 ├── .claude
-│   ├── commands/*.md # カスタムコマンド 
+│   ├── commands/*.md # カスタムコマンド
 │   ├── settings.json # 権限などの設定
 ├── .github
 │   └── workflows
