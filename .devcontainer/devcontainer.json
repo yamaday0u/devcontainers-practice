@@ -1,14 +1,14 @@
 {
-  "name": "Node.js",
-  "build": {
-    "dockerfile": "Dockerfile",
-    "context": ".."
-  },
-  "workspaceFolder": "/workspace",
-  "mounts": [
-    "source=${localWorkspaceFolder},target=/workspace,type=bind",
-    "source=${localWorkspaceFolderBasename}_node_modules,target=/workspace/node_modules,type=volume"
-  ],
-  "postStartCommand": "npm run dev",
-  "forwardPorts": [3000]
+    "name": "Node.js",
+    "build": {
+        "dockerfile": "Dockerfile",
+        "context": ".."
+    },
+    "workspaceFolder": "/workspace",
+    "mounts": [
+        "source=${localWorkspaceFolder},target=/workspace,type=bind",
+        "source=${localWorkspaceFolderBasename}_node_modules,target=/workspace/node_modules,type=volume"
+    ],
+    "postStartCommand": "bash ${containerWorkspaceFolder}/.devcontainer/scripts/install-claude-code.sh && npm run dev",
+    "forwardPorts": [3000]
 }
