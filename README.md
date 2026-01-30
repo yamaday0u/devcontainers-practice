@@ -16,7 +16,7 @@ Dev Containers の練習プロジェクト
 
 ### Dev Containers を起動
 
-VS Codeの左下メニューからコンテナーを開く
+初回起動時にClaude Codeをインストールします。
 
 ## Claude Code
 
