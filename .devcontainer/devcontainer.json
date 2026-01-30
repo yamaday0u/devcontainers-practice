@@ -4,6 +4,11 @@
         "dockerfile": "Dockerfile",
         "context": ".."
     },
+    "customizations": {
+        "vscode": {
+            "extensions": ["esbenp.prettier-vscode"]
+        }
+    },
     "workspaceFolder": "/workspace",
     "mounts": [
         "source=${localWorkspaceFolder},target=/workspace,type=bind",
