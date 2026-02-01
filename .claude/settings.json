@@ -1,5 +1,5 @@
 {
-    "model": "opus",
+    "model": "default",
     "permissions": {
         "allow": [
             "Bash(git status)",
