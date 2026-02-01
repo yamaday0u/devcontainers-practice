@@ -6,7 +6,10 @@
     },
     "customizations": {
         "vscode": {
-            "extensions": ["esbenp.prettier-vscode"]
+            "extensions": ["esbenp.prettier-vscode"],
+            "settings": {
+                "terminal.integrated.defaultProfile.linux": "zsh"
+            }
         }
     },
     "workspaceFolder": "/workspace",
@@ -14,6 +17,6 @@
         "source=${localWorkspaceFolder},target=/workspace,type=bind",
         "source=${localWorkspaceFolderBasename}_node_modules,target=/workspace/node_modules,type=volume"
     ],
-    "postStartCommand": "bash ${containerWorkspaceFolder}/.devcontainer/scripts/install-claude-code.sh && npm run dev",
+    "postStartCommand": "bash ${containerWorkspaceFolder}/.devcontainer/scripts/setup-git-completion.sh && bash ${containerWorkspaceFolder}/.devcontainer/scripts/install-claude-code.sh && npm run dev",
     "forwardPorts": [3000]
 }
