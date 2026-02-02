@@ -14,6 +14,18 @@ Dev Containers + Claude Codeの練習プロジェクト
 
 初回起動時にClaude Codeをインストールします。
 
+## PRの作成
+
+PRの種類に応じて、以下のリンクからPRを作成してください:
+
+- [🆕 新機能を追加する](https://github.com/yamaday0u/devcontainers-practice/compare/development...HEAD?template=feature.md)
+- [🐛 不具合を修正する](https://github.com/yamaday0u/devcontainers-practice/compare/development...HEAD?template=bug_fix.md)
+- [🔧 リファクタリング](https://github.com/yamaday0u/devcontainers-practice/compare/development...HEAD?template=refactoring.md)
+- [📝 ドキュメント更新](https://github.com/yamaday0u/devcontainers-practice/compare/development...HEAD?template=documentation.md)
+- [⚙️ その他の変更](https://github.com/yamaday0u/devcontainers-practice/compare/development...HEAD?template=other.md)
+
+> **Note**: テンプレートを指定せずにPRを作成した場合は、デフォルトで「機能追加」テンプレートが使用されます。
+
 ## Claude Code
 
 **Claude Code 関連のファイル一覧**
