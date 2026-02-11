@@ -99,11 +99,46 @@ When reviewing PRs for this project, focus on:
 - Port 3000 is accessible from the host browser after startup
 - Volume mounts persist changes correctly (code edits sync, node_modules isolation holds)
 
+### Commit Message Guidelines
+
+> **Note**: All commit messages must be written in Japanese (コミットメッセージは日本語で記述してください)
+
+When creating commits, follow these conventions:
+
+**Format:**
+- Use Japanese for both the commit title and description
+- Follow the conventional commits format: `<type>: <description>`
+- Keep the title concise (50 characters or less recommended)
+- Add detailed explanations in the commit body if needed
+
+**Common types (in English):**
+- `feat`: 新機能の追加
+- `fix`: バグ修正
+- `docs`: ドキュメントのみの変更
+- `style`: コードの意味に影響を与えない変更(フォーマット、セミコロンの欠落など)
+- `refactor`: バグ修正や機能追加を伴わないコードの変更
+- `test`: テストの追加や既存テストの修正
+- `chore`: ビルドプロセスやツール、ライブラリの変更
+
+**Examples:**
+- `feat: ユーザー認証機能を追加`
+- `fix: ポート3000の競合エラーを修正`
+- `docs: READMEにセットアップ手順を追記`
+- `refactor: Express ルーティングを整理`
+
+**Co-authorship:**
+- When committing changes made with Claude Code, include the Co-authored-by trailer:
+  ```
+  feat: 新機能を追加
+
+  Co-Authored-By: Claude Sonnet 4.5 <noreply@anthropic.com>
+  ```
+
 ### Creating a Pull Request
 
 Once changes are complete and validated:
 
-1. Commit changes locally with clear, descriptive messages
+1. Commit changes locally with clear, descriptive messages (following the Commit Message Guidelines above)
 2. Push your branch to the remote repository
 3. Open a pull request with a clear title and description
 4. Ensure all validation checks pass before requesting review
